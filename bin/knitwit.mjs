@@ -10,7 +10,7 @@ const argv = yargs(hideBin(process.argv))
     .option('out-dir', {
         type: 'string',
         describe: 'Path to combined wit',
-        default: 'generated/wit/combined-wit'
+        default: 'combined-wit'
     })
     .option('out-world', {
         type: 'string',
