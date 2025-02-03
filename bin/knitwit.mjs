@@ -12,6 +12,11 @@ const argv = yargs(hideBin(process.argv))
         describe: 'Path to combined wit',
         default: 'combined-wit'
     })
+    .option('out-package', {
+        type: 'string',
+        describe: 'The name of the package to be created of the format <namespace>:<name>@<version>',
+    }
+    )
     .option('out-world', {
         type: 'string',
         describe: 'name of world in combined wit',

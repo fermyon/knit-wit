@@ -23,7 +23,8 @@ impl Guest for KnitWit {
             return Err("No worlds provided to be knit".to_owned());
         }
 
-        let output_package = output_package.unwrap_or_else(|| "local:combined-wit".to_owned());
+        let output_package =
+            output_package.unwrap_or_else(|| "local:combined-wit@0.1.0".to_owned());
         let output_world = output_world.unwrap_or_else(|| "combined".to_owned());
 
         let mut resolve = Resolve::default();
